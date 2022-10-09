@@ -1,0 +1,16 @@
+._item {
+  max-width: 272px;
+  position: relative;
+}
+._image {
+  display: block;
+  width: 100%;
+}
+._price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+._num {
+  margin-right: 9px;
+}

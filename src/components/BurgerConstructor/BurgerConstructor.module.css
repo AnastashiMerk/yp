@@ -1,0 +1,27 @@
+._items {
+  max-height: 646px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-bottom: 16px;
+}
+._item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+._item:not(:last-child) {
+  margin-bottom: 16px;
+}
+._total {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+._icon {
+  font-size: 36px;
+  width: 1em;
+  height: 1em;
+}
+._drag svg {
+  display: block;
+}
