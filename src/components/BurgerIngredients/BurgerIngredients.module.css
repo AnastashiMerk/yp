@@ -1,0 +1,10 @@
+._tabs {
+  flex-wrap: wrap;
+}
+._items {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 716px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}

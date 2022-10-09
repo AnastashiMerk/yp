@@ -1,0 +1,32 @@
+._content {
+  position: relative;
+  background: var(--background);
+}
+._wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+._left {
+  margin-right: auto;
+  max-width: 490px;
+  width: 100%;
+}
+._right {
+  margin-left: auto;
+  max-width: 490px;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+._item:not(:last-child) {
+  margin-right: 8px;
+}
+._logo {
+  display: block;
+  max-width: 290px;
+  width: 100%;
+}

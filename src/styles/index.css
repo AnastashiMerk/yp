@@ -1,0 +1,94 @@
+/* fonts */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-weight: 300;
+  src: url("../fonts/JetBrainsMono-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-weight: 200;
+  src: url("../fonts/JetBrainsMono-ExtraLight.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-weight: 400;
+  src: url("../fonts/JetBrainsMono-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-weight: 500;
+  src: url("../fonts/JetBrainsMono-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-weight: bold;
+  src: url("../fonts/JetBrainsMono-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-weight: 600;
+  src: url("../fonts/JetBrainsMono-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-weight: 800;
+  src: url("../fonts/JetBrainsMono-ExtraBold.woff2") format("woff2");
+}
+
+/* main */
+body {
+  margin: 0;
+  font-family: "JetBrains Mono", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+.BurgerIngredientsItems {
+  width: 100%;
+}
+
+/* grid */
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -20px;
+}
+.col {
+  position: relative;
+  width: 100%;
+  padding: 0px 20px;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.flex {
+  display: flex;
+}
+
+/* custome scrollbar */
+.customscroll {
+  overflow-y: auto;
+}
+.customscroll::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: var(--background-element);
+}
+.customscroll::-webkit-scrollbar {
+  width: 8px;
+}
+.customscroll::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  height: 50%;
+  background-color: var(--text-inactive-color);
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}

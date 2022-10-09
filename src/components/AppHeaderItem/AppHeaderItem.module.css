@@ -1,0 +1,22 @@
+._link {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  color: var(--text-inactive-color);
+  text-decoration: none;
+  transition: var(--common-transition);
+}
+._link svg {
+  display: block;
+  fill: var(--text-inactive-color);
+  transition: var(--common-transition);
+}
+._link:hover {
+  color: var(--text-primary-color);
+}
+._link:hover svg {
+  fill: var(--text-primary-color);
+}
+._icon {
+  display: block;
+}

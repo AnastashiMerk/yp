@@ -1,0 +1,18 @@
+._row {
+  width: 100%;
+}
+._row:not(:first-child) {
+  margin-top: 10px;
+}
+._cards {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+._card {
+  padding: 0 12px;
+  flex: 0 0 50%;
+  box-sizing: border-box;
+}
