@@ -3,7 +3,7 @@ import BurgerConstructor from "../BurgerConstructor/BurgerConstructor";
 
 export default function Main({ items, orders}) {
   return (
-    <div className="container pb-10">
+    <main className="container pb-10">
       <h1 className="text text_type_main-large pt-10 pb-5">
         Соберите бургер
       </h1>
@@ -15,6 +15,6 @@ export default function Main({ items, orders}) {
           <BurgerConstructor orders={orders} />
         </div>
       </div>
-    </div>
+    </main>
   );
 }

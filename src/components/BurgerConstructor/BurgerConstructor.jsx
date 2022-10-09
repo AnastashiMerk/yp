@@ -14,12 +14,7 @@ export default function BurgerConstructor({ orders }) {
       return type === 'top' ? `${name} (верх)` : `${name} (низ)`;
     }return name;
   };
-  const top = orders[0];
-  const bottom = orders[orders.length - 1];
-  const middleItems = orders.filter((x) => x._id !== top._id && x._id !== bottom._id);
-  const ar = [
-    top, ...middleItems, bottom
-  ]
+  const totalArray = orders;
   return (
     <>
       <div className={styles.burgerCards}>
@@ -27,8 +22,8 @@ export default function BurgerConstructor({ orders }) {
           <div
             className={`${styles._items} pr-2 customscroll`}
           >
-            {ar &&
-              ar.map((item, index) => {
+            {totalArray &&
+              totalArray.map((item, index) => {
                 return (
                   <div
                     className={styles._item}
